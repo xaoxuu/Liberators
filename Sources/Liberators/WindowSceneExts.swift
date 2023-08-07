@@ -18,18 +18,21 @@ public extension UIWindowScene {
         connectedWindowScenes(.foregroundActive).last
     }
     
-    
     /// 当前scene下的所有可见窗口
     @objc var visibleWindows: [UIWindow] {
         windows.filter { $0.isHidden == false }
     }
     
+    /// 当前scene下的所有可见的正常Level的UIWindow窗口
+    @objc var visibleNormalUIWindows: [UIWindow] {
+        visibleWindows.filter { window in
+            return "\(type(of: window))" == "UIWindow" && window.windowLevel == .normal
+        }
+    }
     
     /// 当前scene下的App主程序窗口
     @objc var appMainWindow: UIWindow? {
-        visibleWindows.filter { window in
-            return "\(type(of: window))" == "UIWindow" && window.windowLevel == .normal
-        }.first
+        visibleNormalUIWindows.first
     }
     
     /// 当前scene下的App主程序窗口的尺寸
