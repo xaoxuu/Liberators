@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD7F2B622A7FCBA5005B39E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F2B612A7FCBA5005B39E2 /* AppDelegate.swift */; };
 		CD7F2B642A7FCBA5005B39E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F2B632A7FCBA5005B39E2 /* SceneDelegate.swift */; };
-		CD7F2B662A7FCBA5005B39E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F2B652A7FCBA5005B39E2 /* ViewController.swift */; };
+		CD7F2B662A7FCBA5005B39E2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F2B652A7FCBA5005B39E2 /* HomeVC.swift */; };
 		CD7F2B692A7FCBA5005B39E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7F2B672A7FCBA5005B39E2 /* Main.storyboard */; };
 		CD7F2B6B2A7FCBA8005B39E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7F2B6A2A7FCBA8005B39E2 /* Assets.xcassets */; };
 		CD7F2B6E2A7FCBA8005B39E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7F2B6C2A7FCBA8005B39E2 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,13 @@
 		CD7F2B832A7FCBA8005B39E2 /* ExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F2B822A7FCBA8005B39E2 /* ExamplesUITests.swift */; };
 		CD7F2B852A7FCBA8005B39E2 /* ExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7F2B842A7FCBA8005B39E2 /* ExamplesUITestsLaunchTests.swift */; };
 		CD7F2B932A7FCBB3005B39E2 /* Liberators in Frameworks */ = {isa = PBXBuildFile; productRef = CD7F2B922A7FCBB3005B39E2 /* Liberators */; };
+		CDE208792A95EB4B00D53F4A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CDE208782A95EB4B00D53F4A /* SnapKit */; };
+		CDE2087C2A95EB5900D53F4A /* ProHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CDE2087B2A95EB5900D53F4A /* ProHUD */; };
+		CDE2087E2A95EE0D00D53F4A /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE2087D2A95EE0D00D53F4A /* ListVC.swift */; };
+		CDE208842A95F09A00D53F4A /* TestCodeThrottleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208832A95F09A00D53F4A /* TestCodeThrottleVC.swift */; };
+		CDE208862A96140000D53F4A /* TestCodeDebounceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208852A96140000D53F4A /* TestCodeDebounceVC.swift */; };
+		CDE208882A96147E00D53F4A /* HUDExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208872A96147E00D53F4A /* HUDExts.swift */; };
+		CDE2088A2A96188800D53F4A /* TestCodeRetryableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208892A96188800D53F4A /* TestCodeRetryableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,7 @@
 		CD7F2B5E2A7FCBA5005B39E2 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7F2B612A7FCBA5005B39E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7F2B632A7FCBA5005B39E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD7F2B652A7FCBA5005B39E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD7F2B652A7FCBA5005B39E2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CD7F2B682A7FCBA5005B39E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD7F2B6A2A7FCBA8005B39E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7F2B6D2A7FCBA8005B39E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +57,11 @@
 		CD7F2B7E2A7FCBA8005B39E2 /* ExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7F2B822A7FCBA8005B39E2 /* ExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesUITests.swift; sourceTree = "<group>"; };
 		CD7F2B842A7FCBA8005B39E2 /* ExamplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDE2087D2A95EE0D00D53F4A /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		CDE208832A95F09A00D53F4A /* TestCodeThrottleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeThrottleVC.swift; sourceTree = "<group>"; };
+		CDE208852A96140000D53F4A /* TestCodeDebounceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeDebounceVC.swift; sourceTree = "<group>"; };
+		CDE208872A96147E00D53F4A /* HUDExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDExts.swift; sourceTree = "<group>"; };
+		CDE208892A96188800D53F4A /* TestCodeRetryableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeRetryableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7F2B932A7FCBB3005B39E2 /* Liberators in Frameworks */,
+				CDE2087C2A95EB5900D53F4A /* ProHUD in Frameworks */,
+				CDE208792A95EB4B00D53F4A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +117,12 @@
 			children = (
 				CD7F2B612A7FCBA5005B39E2 /* AppDelegate.swift */,
 				CD7F2B632A7FCBA5005B39E2 /* SceneDelegate.swift */,
-				CD7F2B652A7FCBA5005B39E2 /* ViewController.swift */,
+				CDE208872A96147E00D53F4A /* HUDExts.swift */,
+				CDE2087D2A95EE0D00D53F4A /* ListVC.swift */,
+				CD7F2B652A7FCBA5005B39E2 /* HomeVC.swift */,
+				CDE208832A95F09A00D53F4A /* TestCodeThrottleVC.swift */,
+				CDE208852A96140000D53F4A /* TestCodeDebounceVC.swift */,
+				CDE208892A96188800D53F4A /* TestCodeRetryableVC.swift */,
 				CD7F2B672A7FCBA5005B39E2 /* Main.storyboard */,
 				CD7F2B6A2A7FCBA8005B39E2 /* Assets.xcassets */,
 				CD7F2B6C2A7FCBA8005B39E2 /* LaunchScreen.storyboard */,
@@ -147,6 +166,8 @@
 			name = Examples;
 			packageProductDependencies = (
 				CD7F2B922A7FCBB3005B39E2 /* Liberators */,
+				CDE208782A95EB4B00D53F4A /* SnapKit */,
+				CDE2087B2A95EB5900D53F4A /* ProHUD */,
 			);
 			productName = Examples;
 			productReference = CD7F2B5E2A7FCBA5005B39E2 /* Examples.app */;
@@ -222,6 +243,8 @@
 			mainGroup = CD7F2B552A7FCBA5005B39E2;
 			packageReferences = (
 				CD7F2B912A7FCBB3005B39E2 /* XCLocalSwiftPackageReference ".." */,
+				CDE208772A95EB4B00D53F4A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CDE2087A2A95EB5900D53F4A /* XCRemoteSwiftPackageReference "ProHUD" */,
 			);
 			productRefGroup = CD7F2B5F2A7FCBA5005B39E2 /* Products */;
 			projectDirPath = "";
@@ -266,8 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7F2B662A7FCBA5005B39E2 /* ViewController.swift in Sources */,
+				CDE208842A95F09A00D53F4A /* TestCodeThrottleVC.swift in Sources */,
+				CDE2087E2A95EE0D00D53F4A /* ListVC.swift in Sources */,
+				CDE2088A2A96188800D53F4A /* TestCodeRetryableVC.swift in Sources */,
+				CD7F2B662A7FCBA5005B39E2 /* HomeVC.swift in Sources */,
 				CD7F2B622A7FCBA5005B39E2 /* AppDelegate.swift in Sources */,
+				CDE208882A96147E00D53F4A /* HUDExts.swift in Sources */,
+				CDE208862A96140000D53F4A /* TestCodeDebounceVC.swift in Sources */,
 				CD7F2B642A7FCBA5005B39E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,11 +481,13 @@
 				DEVELOPMENT_TEAM = 34W5TB5KD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Examples/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Liberators;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,11 +511,13 @@
 				DEVELOPMENT_TEAM = 34W5TB5KD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Examples/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Liberators;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,10 +655,39 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		CDE208772A95EB4B00D53F4A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.xaox.cc/mirrors/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		CDE2087A2A95EB5900D53F4A /* XCRemoteSwiftPackageReference "ProHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.xaox.cc/mirrors/ProHUD.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		CD7F2B922A7FCBB3005B39E2 /* Liberators */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Liberators;
+		};
+		CDE208782A95EB4B00D53F4A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE208772A95EB4B00D53F4A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CDE2087B2A95EB5900D53F4A /* ProHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDE2087A2A95EB5900D53F4A /* XCRemoteSwiftPackageReference "ProHUD" */;
+			productName = ProHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
