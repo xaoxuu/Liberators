@@ -19,7 +19,7 @@ class TestCodeDebounceVC: ListVC {
         
         list.add(title: "") { section in
             section.add(title: "防抖0.5s") {
-                CodeDebounce(interval: 0.5) {
+                CodeDebounce(delay: 0.5) {
                     Capsule("已执行")
                 } onWaiting: {
                     Capsule(.middle.duration(0).title("正在推迟"))

@@ -18,7 +18,7 @@ class TestCodeThrottleVC: ListVC {
         
         list.add(title: "独占冷却时间") { section in
             section.add(title: "独占3s冷却") {
-                CodeThrottle(interval: 3) {
+                CodeThrottle(timeout: 3) {
                     CountDownCapsule(.countdown(3).title("已执行"))
                 } onThrottling: {
                     Capsule(.middle.duration(0).title("正在冷却中"))
@@ -29,21 +29,21 @@ class TestCodeThrottleVC: ListVC {
         list.add(title: "共享冷却时间") { section in
             let id = "shared-cooldown-a"
             section.add(title: "共享1s冷却") {
-                CodeThrottle(identifier: id, interval: 1) {
+                CodeThrottle(identifier: id, timeout: 1) {
                     CountDownCapsule(.countdown(1).title("已执行1"))
                 } onThrottling: {
                     Capsule(.middle.duration(0).title("正在冷却中1"))
                 }
             }
             section.add(title: "共享2s冷却") {
-                CodeThrottle(identifier: id, interval: 2) {
+                CodeThrottle(identifier: id, timeout: 2) {
                     CountDownCapsule(.countdown(2).title("已执行2"))
                 } onThrottling: {
                     Capsule(.middle.duration(0).title("正在冷却中2"))
                 }
             }
             section.add(title: "共享3s冷却") {
-                CodeThrottle(identifier: id, interval: 3) {
+                CodeThrottle(identifier: id, timeout: 3) {
                     CountDownCapsule(.countdown(3).title("已执行3"))
                 } onThrottling: {
                     Capsule(.middle.duration(0).title("正在冷却中3"))
