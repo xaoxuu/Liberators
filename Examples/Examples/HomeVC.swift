@@ -44,7 +44,7 @@ class HomeVC: ListVC {
         
         list.add(title: "Foundation工具") { section in
             section.add(title: "Timeoutable: 一次性临时观察者") {
-                let vc = TestTimeoutableObserverVC()
+                let vc = TestTimeoutableVC()
                 push(vc)
             }
         }

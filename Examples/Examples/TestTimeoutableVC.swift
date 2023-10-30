@@ -1,5 +1,5 @@
 //
-//  TestTimeoutableObserverVC.swift
+//  TestTimeoutableVC.swift
 //  Examples
 //
 //  Created by xaoxuu on 2023/8/23.
@@ -9,7 +9,7 @@ import UIKit
 import Liberators
 import ProHUD
 
-class TestTimeoutableObserverVC: ListVC {
+class TestTimeoutableVC: ListVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

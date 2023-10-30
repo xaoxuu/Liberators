@@ -100,13 +100,32 @@ class TestCodeRetryableVC: ListVC {
                     Capsule("已经达到重试次数上限")
                 }
             }
-            section.add(title: "使之重试") {
+            section.add(title: "立即重试") {
                 CodeRetryable.find(identifier: "retry-action")?.continue()
             }
-            section.add(title: "使之失效（并释放内存）") {
+            section.add(title: "立即失效（并释放内存）") {
                 CodeRetryable.find(identifier: "retry-action")?.invalidate()
             }
         }
+        
+        list.add(title: "重试过程中取消") { section in
+            section.add(title: "设置重试代码，不立即执行") {
+                var i = 0
+                CodeRetryable(identifier: "retry2", limitTimes: 5, runItImmediately: false) { retryer in
+                    i += 1
+                    Capsule(.middle.title("第\(i)次执行").duration(0))
+                } onLimitReached: {
+                    Capsule("已经达到重试次数上限")
+                }
+            }
+            section.add(title: "设置2s后重试") {
+                CodeRetryable.find(identifier: "retry2")?.continue(queue: .main, after: 2)
+            }
+            section.add(title: "立即失效（并释放内存）") {
+                CodeRetryable.find(identifier: "retry2")?.invalidate()
+            }
+        }
+        
     }
 
 }

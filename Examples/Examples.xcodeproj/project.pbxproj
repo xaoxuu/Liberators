@@ -24,7 +24,7 @@
 		CDE208862A96140000D53F4A /* TestCodeDebounceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208852A96140000D53F4A /* TestCodeDebounceVC.swift */; };
 		CDE208882A96147E00D53F4A /* HUDExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208872A96147E00D53F4A /* HUDExts.swift */; };
 		CDE2088A2A96188800D53F4A /* TestCodeRetryableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE208892A96188800D53F4A /* TestCodeRetryableVC.swift */; };
-		CDF35D672A96571D00625C2E /* TestTimeoutableObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF35D662A96571D00625C2E /* TestTimeoutableObserverVC.swift */; };
+		CDF35D672A96571D00625C2E /* TestTimeoutableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF35D662A96571D00625C2E /* TestTimeoutableVC.swift */; };
 		CDF35D692A965E7D00625C2E /* TestColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF35D682A965E7D00625C2E /* TestColorVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		CDE208852A96140000D53F4A /* TestCodeDebounceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeDebounceVC.swift; sourceTree = "<group>"; };
 		CDE208872A96147E00D53F4A /* HUDExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDExts.swift; sourceTree = "<group>"; };
 		CDE208892A96188800D53F4A /* TestCodeRetryableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCodeRetryableVC.swift; sourceTree = "<group>"; };
-		CDF35D662A96571D00625C2E /* TestTimeoutableObserverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTimeoutableObserverVC.swift; sourceTree = "<group>"; };
+		CDF35D662A96571D00625C2E /* TestTimeoutableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTimeoutableVC.swift; sourceTree = "<group>"; };
 		CDF35D682A965E7D00625C2E /* TestColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestColorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +127,7 @@
 				CDE208832A95F09A00D53F4A /* TestCodeThrottleVC.swift */,
 				CDE208852A96140000D53F4A /* TestCodeDebounceVC.swift */,
 				CDE208892A96188800D53F4A /* TestCodeRetryableVC.swift */,
-				CDF35D662A96571D00625C2E /* TestTimeoutableObserverVC.swift */,
+				CDF35D662A96571D00625C2E /* TestTimeoutableVC.swift */,
 				CDF35D682A965E7D00625C2E /* TestColorVC.swift */,
 				CD7F2B672A7FCBA5005B39E2 /* Main.storyboard */,
 				CD7F2B6A2A7FCBA8005B39E2 /* Assets.xcassets */,
@@ -302,7 +302,7 @@
 				CD7F2B622A7FCBA5005B39E2 /* AppDelegate.swift in Sources */,
 				CDE208882A96147E00D53F4A /* HUDExts.swift in Sources */,
 				CDE208862A96140000D53F4A /* TestCodeDebounceVC.swift in Sources */,
-				CDF35D672A96571D00625C2E /* TestTimeoutableObserverVC.swift in Sources */,
+				CDF35D672A96571D00625C2E /* TestTimeoutableVC.swift in Sources */,
 				CDF35D692A965E7D00625C2E /* TestColorVC.swift in Sources */,
 				CD7F2B642A7FCBA5005B39E2 /* SceneDelegate.swift in Sources */,
 			);
