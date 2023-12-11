@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Examples
+@testable import Liberators
 
 final class ExamplesTests: XCTestCase {
 

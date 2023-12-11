@@ -57,7 +57,7 @@ public class CodeDebounce {
             storedInstances[identifier] = nil
             targetCodes()
         }
-        if var obj = storedInstances[identifier] {
+        if let obj = storedInstances[identifier] {
             // 重设延迟
             obj.resetTimer(delay: delay, onFinish: onFinish)
             obj.onWaiting?()
